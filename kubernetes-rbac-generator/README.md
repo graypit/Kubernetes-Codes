@@ -24,9 +24,6 @@ $ mkdir /var/lib/devops-codes/
 $ cd /var/lib/devops-codes/
 $ git clone https://github.com/graypit/Kubernetes-Codes.git
 $ chmod +x ./Kubernetes-Codes/kubernetes-rbac-generator/kube-rbac.sh
-```
-### Create alias for it:
-```bash
 $ echo "alias kube-rbac="/var/lib/devops-codes/Kubernetes-Codes/kubernetes-rbac-generator/kube-rbac.sh"" >> ~/.bashrc && source ~/.bashrc
 ```
 ### P.S For detail information just execute:
