@@ -174,7 +174,7 @@ function DetectSslPath() {
     if [[ -z $CaCert || -z $CaKey ]]
     then
         KubePkiPath=$(kubectl -n kube-system describe po $KubeApiServerPod|grep k8s-certs|head -n1|awk '{ print $1 }')
-        if [ "$#" -eq 0 ];then echo 'Oops..We did not find Kubernetes CA Certificates Path' && exit 1;fi
+        if [ ! "$#" -eq 0 ];then echo 'Oops..We did not find Kubernetes CA Certificates Path' && exit 1;fi
     fi
     if [ "$(ls $KubePkiPath 2>/dev/null)" ]
     then
