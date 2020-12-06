@@ -5,6 +5,7 @@
 As we know, there are times when it's necessary to provide access to a user with specific rules.
 
 For example, bind him to a namespace or even more rigidly to an object -  deployment.
+Finally, this script will generate a K8s config file , which you send to the user who will use it (export KUBECONFIG=/bla/bla/generated-config)
 
 With the help of this script, you can easily do this.
 
