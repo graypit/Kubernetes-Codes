@@ -13,12 +13,7 @@ For this script to work, follow the steps shown below
 
 ### Prepare Environment:
 
-- Quick install:
-```bash
-$ curl https://raw.githubusercontent.com/graypit/Kubernetes-Codes/master/kubernetes-rbac-generator/kube-rbac.sh > /usr/bin/kube-rbac 2>/dev/null
-$ chmod +x /usr/bin/kube-rbac
-```
-- Install with cloning repo:
+- Install:
 ```bash
 $ mkdir /var/lib/devops-codes/
 $ cd /var/lib/devops-codes/
