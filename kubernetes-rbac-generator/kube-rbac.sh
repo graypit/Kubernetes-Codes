@@ -212,8 +212,8 @@ function GenerateRoleAndRoleBinding(){
 }
 
 function DeleteTask () {
-    kubectl -n $Namespace delete role $Username-role
-    kubectl -n $Namespace delete rolebinding $Username-rolebinding
+    kubectl -n $Namespace delete role $Username
+    kubectl -n $Namespace delete rolebinding $Username
     exit
 }
 
